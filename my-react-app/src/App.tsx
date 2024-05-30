@@ -4,8 +4,8 @@ import { PropsWithChildren } from "./@types/DynamicData";
 function App({ children }: PropsWithChildren) {
   return (
     <>
-      <div className="text-green-600 flex space-x-9 bg-black m-auto justify-center align-middle text-center">
-        <Link to="/" className="block hover:text-red-700 ">Home</Link>
+      <div className="text-white flex space-x-9 bg-black m-auto justify-center align-middle text-center">
+        <Link to="/" className="block hover:text-red-700">Home</Link>
         <Link to="/register" className="block hover:text-red-700">Register</Link>
         <Link to="/products" className="block hover:text-red-700">Products</Link>
         <Link to="/dashboard" className="block hover:text-red-700">Dashboard</Link>
