@@ -5,6 +5,9 @@ import Products from "../pages/Products";
 import Register from "../pages/Register";
 import SingleProduct from "../pages/SingleProduct";
 import AuthGaurd from "./AuthGaurd";
+import ServerError from "../pages/ServerError";
+import Forbidden from "../pages/Forbidden";
+import BadRequest from "../pages/BadRequest";
 
 const routes = [
   {
@@ -31,6 +34,18 @@ const routes = [
   {
     path: "*",
     element: <NotFound />,
+  },
+  {
+    path: "/server-error",
+    element: <ServerError />,
+  },
+  {
+    path: "/forbidden",
+    element: <Forbidden />,
+  },
+  {
+    path: "/bad-request",
+    element: <BadRequest />,
   },
 ];
 
