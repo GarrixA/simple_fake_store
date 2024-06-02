@@ -9,6 +9,7 @@ function App({ children }: PropsWithChildren) {
         <Link to="/register" className="block hover:text-red-700">Register</Link>
         <Link to="/products" className="block hover:text-red-700">Products</Link>
         <Link to="/dashboard" className="block hover:text-red-700">Dashboard</Link>
+        <Link to="/redux" className="block hover:text-red-700">Redux</Link>
       </div>
       <div className="mt-8 text-2xl">
         {children}
