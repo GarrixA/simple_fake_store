@@ -1,3 +1,4 @@
+import Counter from "../components/Counter";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
@@ -24,6 +25,10 @@ const routes = [
     element: <SingleProduct />,
   },
   {
+    path: "/redux",
+    element: < Counter/>,
+  },
+  {
     path: "/dashboard",
     element: <Dashboard />,
     layout: "protected",
@@ -31,7 +36,7 @@ const routes = [
   {
     path: "*",
     element: <NotFound />,
-  },
+  }
 ];
 
 const protectedRoutes = routes.map((route) => {
